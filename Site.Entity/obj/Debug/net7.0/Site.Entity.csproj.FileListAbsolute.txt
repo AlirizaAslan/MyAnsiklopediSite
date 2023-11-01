@@ -1,0 +1,15 @@
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/bin/Debug/net7.0/Site.Entity.deps.json
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/bin/Debug/net7.0/Site.Entity.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/bin/Debug/net7.0/Site.Entity.pdb
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/bin/Debug/net7.0/Site.Core.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/bin/Debug/net7.0/Site.Core.pdb
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/Site.Entity.csproj.AssemblyReference.cache
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/Site.Entity.GeneratedMSBuildEditorConfig.editorconfig
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/Site.Entity.AssemblyInfoInputs.cache
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/Site.Entity.AssemblyInfo.cs
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/Site.Entity.csproj.CoreCompileInputs.cache
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/Site.Entity.csproj.CopyComplete
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/Site.Entity.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/refint/Site.Entity.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/Site.Entity.pdb
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/Debug/net7.0/ref/Site.Entity.dll

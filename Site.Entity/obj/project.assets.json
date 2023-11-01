@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Site.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Site.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Site.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Site.Core/1.0.0": {
+      "type": "project",
+      "path": "../Site.Core/Site.Core.csproj",
+      "msbuildProject": "../Site.Core/Site.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Site.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/aliriza/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/Site.Entity.csproj",
+      "projectName": "Site.Entity",
+      "projectPath": "/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/Site.Entity.csproj",
+      "packagesPath": "/home/aliriza/.nuget/packages/",
+      "outputPath": "/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Entity/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/aliriza/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/Site.Core.csproj": {
+              "projectPath": "/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/Site.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

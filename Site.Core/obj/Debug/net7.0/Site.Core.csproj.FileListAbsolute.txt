@@ -1,0 +1,12 @@
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/bin/Debug/net7.0/Site.Core.deps.json
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/bin/Debug/net7.0/Site.Core.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/bin/Debug/net7.0/Site.Core.pdb
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/obj/Debug/net7.0/Site.Core.csproj.AssemblyReference.cache
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/obj/Debug/net7.0/Site.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/obj/Debug/net7.0/Site.Core.AssemblyInfoInputs.cache
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/obj/Debug/net7.0/Site.Core.AssemblyInfo.cs
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/obj/Debug/net7.0/Site.Core.csproj.CoreCompileInputs.cache
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/obj/Debug/net7.0/Site.Core.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/obj/Debug/net7.0/refint/Site.Core.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/obj/Debug/net7.0/Site.Core.pdb
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Core/obj/Debug/net7.0/ref/Site.Core.dll

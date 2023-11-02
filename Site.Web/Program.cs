@@ -1,4 +1,7 @@
+using Microsoft.AspNetCore.Builder;
 using Site.Data.DataLayerExtantions;
+using Site.Service.Extantions;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,7 @@ builder.Services.AddControllersWithViews();
 
          
 builder.Services.LoadDataLayerExtension(builder.Configuration);
+builder.Services.LoadServiceLayerExtantions();
 
 var app = builder.Build();
 
@@ -25,8 +29,24 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints=>
+{
+    endpoints.MapAreaControllerRoute(
+        name:"Admin",
+        areaName:"Admin",
+        pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
 
+        endpoints.MapDefaultControllerRoute();
+        
+    
+
+});
+
+// app.MapControllerRoute(
+//     name: "default",
+//     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// app.MapDefaultControllerRoute();  //alttaki kodun fonksiyon hali
+// //  name: "default",
+// //     pattern: "{controller=Home}/{action=Index}/{id?}"); 
 app.Run();

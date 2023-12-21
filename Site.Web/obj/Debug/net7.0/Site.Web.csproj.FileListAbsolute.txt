@@ -377,3 +377,11 @@
 /home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
 /home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
 /home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/obj/Debug/net7.0/Site.Web.MvcApplicationPartsAssemblyInfo.cs
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/AutoMapper.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/home/aliriza/Masaüstü/MyAnsiklopediSite/Site.Web/bin/Debug/net7.0/Microsoft.Extensions.Options.dll

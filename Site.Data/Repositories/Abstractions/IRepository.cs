@@ -1,10 +1,6 @@
 ﻿using Site.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Site.Data.Repositories.Abstractions
 {
@@ -15,7 +11,7 @@ namespace Site.Data.Repositories.Abstractions
         Task<List<T>> GetAllAsycn(Expression<Func<T, bool>> predicate = null, params Expression<Func<T, object>>[] includeProperties);
         Task<T> GetAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties); //işlem yaparken bir tane değer dönmesini istediğimizde kullanacaz
         
-        Task<T> GetByGuidAsync(Guid id);//id karşılık gelen entity bulabilecez
+        Task<T> GetByIdAsync(int id);//id karşılık gelen entity bulabilecez
 
         Task<T> UpdateAsync(T entity);
 

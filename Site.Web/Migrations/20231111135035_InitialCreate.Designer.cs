@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Site.Web.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231101134917_Initial")]
-    partial class Initial
+    [Migration("20231111135035_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -82,9 +82,6 @@ namespace Site.Web.Migrations
                     b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime>("PublishDate")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<int>("ReadTime")
                         .HasColumnType("integer");
 
@@ -96,9 +93,6 @@ namespace Site.Web.Migrations
                         .HasColumnType("integer");
 
                     b.Property<int?>("UserId1")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("UserId2")
                         .HasColumnType("integer");
 
                     b.Property<bool>("isDeleted")
@@ -113,8 +107,6 @@ namespace Site.Web.Migrations
                     b.HasIndex("UserId");
 
                     b.HasIndex("UserId1");
-
-                    b.HasIndex("UserId2");
 
                     b.ToTable("Articles");
                 });
@@ -357,16 +349,12 @@ namespace Site.Web.Migrations
                         .HasForeignKey("ImageId");
 
                     b.HasOne("Site.Entity.Entities.User", null)
-                        .WithMany("DeletedArticles")
+                        .WithMany("EditedArticles")
                         .HasForeignKey("UserId");
 
                     b.HasOne("Site.Entity.Entities.User", null)
-                        .WithMany("EditedArticles")
+                        .WithMany("SavedArticles")
                         .HasForeignKey("UserId1");
-
-                    b.HasOne("Site.Entity.Entities.User", null)
-                        .WithMany("WrittenArticles")
-                        .HasForeignKey("UserId2");
 
                     b.Navigation("Author");
                 });
@@ -411,11 +399,9 @@ namespace Site.Web.Migrations
                 {
                     b.Navigation("Articles");
 
-                    b.Navigation("DeletedArticles");
-
                     b.Navigation("EditedArticles");
 
-                    b.Navigation("WrittenArticles");
+                    b.Navigation("SavedArticles");
                 });
 #pragma warning restore 612, 618
         }

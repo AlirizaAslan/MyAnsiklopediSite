@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Site.Web.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -85,14 +85,12 @@ namespace Site.Web.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Title = table.Column<string>(type: "text", nullable: false),
                     Content = table.Column<string>(type: "text", nullable: false),
-                    PublishDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     ReadTime = table.Column<int>(type: "integer", nullable: false),
                     ClickCount = table.Column<int>(type: "integer", nullable: false),
                     AuthorId = table.Column<int>(type: "integer", nullable: false),
                     ImageId = table.Column<int>(type: "integer", nullable: true),
                     UserId = table.Column<int>(type: "integer", nullable: true),
                     UserId1 = table.Column<int>(type: "integer", nullable: true),
-                    UserId2 = table.Column<int>(type: "integer", nullable: true),
                     CreatedBy = table.Column<string>(type: "text", nullable: false),
                     ModifiedBy = table.Column<string>(type: "text", nullable: false),
                     DeletedBy = table.Column<string>(type: "text", nullable: false),
@@ -123,11 +121,6 @@ namespace Site.Web.Migrations
                     table.ForeignKey(
                         name: "FK_Articles_Users_UserId1",
                         column: x => x.UserId1,
-                        principalTable: "Users",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Articles_Users_UserId2",
-                        column: x => x.UserId2,
                         principalTable: "Users",
                         principalColumn: "Id");
                 });
@@ -233,11 +226,6 @@ namespace Site.Web.Migrations
                 name: "IX_Articles_UserId1",
                 table: "Articles",
                 column: "UserId1");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Articles_UserId2",
-                table: "Articles",
-                column: "UserId2");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ArticleTranslations_ArticleId",

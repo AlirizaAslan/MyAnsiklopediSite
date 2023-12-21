@@ -1,11 +1,7 @@
-﻿using Site.Data.Context;
+﻿using Namespace;
 using Site.Data.Repositories.Abstractions;
 using Site.Data.Repositories.Concretes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Site.Data.UnitOfWorks
 {

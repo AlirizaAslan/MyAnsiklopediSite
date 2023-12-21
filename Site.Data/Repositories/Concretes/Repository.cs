@@ -1,13 +1,9 @@
 ﻿using Site.Core.Entities;
-using Site.Data.Context;
 using Site.Data.Repositories.Abstractions;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+
+using Namespace;
 
 namespace Site.Data.Repositories.Concretes
 {//burdaki T article category ımage den herhangi biri hangsinde işlem yaparsak o oluyor
@@ -19,6 +15,7 @@ namespace Site.Data.Repositories.Concretes
         {
             this.dbContext = dbContext;
         }
+
 
         private DbSet<T> Table { get => dbContext.Set<T>(); }
 
@@ -56,7 +53,7 @@ namespace Site.Data.Repositories.Concretes
 
         }
 
-        public async Task<T> GetByGuidAsync(Guid id)
+        public async Task<T> GetByIdAsync(int id)
         {
             return await Table.FindAsync(id);
         }
@@ -82,6 +79,11 @@ namespace Site.Data.Repositories.Concretes
         public async Task<int> CountAsync(Expression<Func<T, bool>> predicate = null)
         {
             return await Table.CountAsync(predicate);
+        }
+
+        public Task<T> GetByGuidAsync(Guid id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

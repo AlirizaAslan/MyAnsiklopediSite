@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using Site.Entity.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Namespace
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser,AppRole,int,AppUserClaim,AppUserRole,AppUserLogin,AppRoleClaim,AppUserToken>
     {
         
     public AppDbContext()
@@ -18,7 +20,8 @@ namespace Namespace
     {
     }
     
-    
+       
+
     public DbSet<Article>Articles {get; set;}
  
      public DbSet<ArticleTranslation>ArticleTranslations{get; set;}
@@ -38,13 +41,18 @@ namespace Namespace
         builder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         
         //builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-        
 
         builder.Entity<Article>()
-         .HasOne(a => a.Author)
-         .WithMany(u => u.Articles)
-        .HasForeignKey(a => a.AuthorId);
-        
+             .HasOne(a => a.Author)          // Article sınıfındaki navigasyon özelliği
+             .WithMany(u => u.Articles)      // User sınıfındaki Article listesi (eğer bir User'ın birden çok Article'ı olabilirse)
+             .HasForeignKey(a => a.AuthorId); // Article sınıfındaki dış anahtar sütunu
+                                        
+    //     builder.Entity<AppUser>()
+    // .HasOne(u => u.Image)
+    // .WithMany()
+    // .HasForeignKey(u => u.ImageId)
+    // .OnDelete(DeleteBehavior.Cascade); // Kaskad silme
+
     }
         
     }

@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using Site.Core.Entities;
 
 namespace Site.Entity.Entities;
@@ -11,9 +12,11 @@ public class User:EntityBase
         public int FollowerCount { get; set; } // Takipçi sayısı
         public ICollection<User> Followers { get; set; } // Kullanıcıyı takip edenler
         public ICollection<User> Following { get; set; } // Kullanıcının takip ettiği kişiler
+         public ICollection<Article> SavedArticles { get; set; } // Kullanıcının kaydettiği makaleler
         public  ICollection<Article> Articles { get; set; } // Kullanıcının makaleleri
         public  ICollection<Article> EditedArticles { get; set; } // Düzenlenen makaleler
-        public  ICollection<Article> DeletedArticles { get; set; } // Silinen makaleler
-        public  ICollection<Article> WrittenArticles { get; set; } // Yazılan makaleler
+
+        [NotMapped]
+        public ICollection<Article> UsersWhoReported { get; set; }   // Kullanıcının raporladığı makaleler
 
     }
